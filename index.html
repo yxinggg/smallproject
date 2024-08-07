@@ -12,8 +12,48 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <a href="product.html">
         <button>Products</button>
     </a>
+=======
+        <a href="about us.html">
+            <button>About Us</button>
+        </a>
+   
+    <img src="https://www.pngall.com/wp-content/uploads/15/Snorlax-PNG-Pic.png" alt="Snorlax" class="floating-snorlax">
+>>>>>>> 6f999287aeb16200edc214d732ed05d4d8152fb1
 </body>
 </html>
+
+
+<style>
+    body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars due to floating */
+}
+
+.floating-snorlax {
+    position: absolute;
+    width: 150px; /* Adjust the size as needed */
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50px, -50px);
+    }
+    50% {
+        transform: translate(-50px, 50px);
+    }
+    75% {
+        transform: translate(50px, 50px);
+    }
+    100% {
+        transform: translate(-50px, -50px);
+    }
+}
+</style>
