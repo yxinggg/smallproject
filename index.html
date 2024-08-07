@@ -5,66 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars due to floating */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
         button {
             background-color: rgb(155, 155, 212);
             color: white;
+            margin: 0 10px; /* Add some space between buttons */
+        }
+
+        .floating-snorlax {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 200px; /* Adjust the size as needed */
+            animation: float 10s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, -50px);
+            }
+            50% {
+                transform: translate(-50px, 50px);
+            }
+            75% {
+                transform: translate(50px, 50px);
+            }
+            100% {
+                transform: translate(-50px, -50px);
+            }
         }
     </style>
 </head>
 <body>
-<<<<<<< HEAD
+    <img src="https://as1.ftcdn.net/v2/jpg/06/37/76/30/1000_F_637763013_47MndpCdEjtgduLDf7Vb0dKWe1nIuVDv.jpg" alt="banner" class="hero-image">
 
-    <a href="product.html">
-        <button>Products</button>
-    </a>
-=======
-    <a href="product.html">
-        <button>Products</button>
-    </a>
+    <div class="buttons-container">
+        <a href="product.html">
+            <button>Products</button>
+        </a>
         <a href="contact.html">
             <button>Contact</button>
         </a>
->>>>>>> ecf50167dfd201f2690b10d5ee7693021df2c265
         <a href="about us.html">
             <button>About Us</button>
         </a>
-   
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fdo%2Fhalloween&psig=AOvVaw0gm7vNQlzSEt3PZYtROoiE&ust=1723096090882000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi_iqaX4ocDFQAAAAAdAAAAABAE" alt="banner" class="hero-image">
+    </div>
+
     <img src="https://www.pngall.com/wp-content/uploads/15/Snorlax-PNG-Pic.png" alt="Snorlax" class="floating-snorlax">
 </body>
 </html>
-
-
-<style>
-    body {
-    margin: 0;
-    overflow: hidden; /* Prevents scrollbars due to floating */
-}
-
-.floating-snorlax {
-    position: absolute;
-    width: 150px; /* Adjust the size as needed */
-    animation: float 10s ease-in-out infinite;
-}
-.hero-image {
-    width: auto;
-}
-
-@keyframes float {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(50px, -50px);
-    }
-    50% {
-        transform: translate(-50px, 50px);
-    }
-    75% {
-        transform: translate(50px, 50px);
-    }
-    100% {
-        transform: translate(-50px, -50px);
-    }
-}
-</style>
