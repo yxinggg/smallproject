@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <style>
+        button {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <a href="services.html">
         <button style="background:rgb(106, 79, 156)">Services</button>
     </a>
+    <a href="product.html">
+        <button>Products</button>
+    </a>
+        <a href="contact.html">
+            <button>Contact</button>
+        </a>
+        <a href="about us.html">
+            <button>About Us</button>
+        </a>
+   
+    <img src="https://www.pngall.com/wp-content/uploads/15/Snorlax-PNG-Pic.png" alt="Snorlax" class="floating-snorlax">
 </body>
 </html>
+
+
+<style>
+    body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars due to floating */
+}
+
+.floating-snorlax {
+    position: absolute;
+    width: 150px; /* Adjust the size as needed */
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50px, -50px);
+    }
+    50% {
+        transform: translate(-50px, 50px);
+    }
+    75% {
+        transform: translate(50px, 50px);
+    }
+    100% {
+        transform: translate(-50px, -50px);
+    }
+}
+</style>
